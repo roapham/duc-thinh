@@ -23,5 +23,6 @@ const schema = makeExecutableSchema({
 const server = new GraphQLServer({ schema });
 
 mongoose.connection.once('open', () => {
+  // eslint-disable-next-line no-console
   server.start(() => console.log('Server is running on localhost:4000'));
 });
