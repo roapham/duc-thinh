@@ -6,9 +6,9 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from 'react-apollo';
 import { BrowserRouter } from 'react-router-dom';
 
-const client = new ApolloClient({
-  uri: "http://localhost:4000"
-});
+const uri = "http://localhost:4000";
+
+const client = new ApolloClient({ uri });
 
 ReactDOM.render(
   <BrowserRouter>

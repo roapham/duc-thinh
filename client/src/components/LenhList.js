@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 
-class LinkList extends Component {
+class LenhList extends Component {
   render() {
     return (
-      <h1>Link List</h1>
+      <h1>Báo Cáo Điều Hành Xe</h1>
     )
   }
 }
 
-export default withRouter(LinkList)
+export default withRouter(LenhList)
