@@ -74,14 +74,14 @@ class App extends React.Component {
         </Drawer>
         <main className={classes.content}>
           <div className={classes.toolbar} />
-          <Typography noWrap>
-            <div>
+          {/* <Typography noWrap> */}
+            {/* <div> */}
               <Switch>
                 <Route exact path="/" component={LenhDieuXe} />
                 <Route exact path="/create" component={CreateLink} />
               </Switch>
-            </div>
-          </Typography>
+            {/* </div> */}
+          {/* </Typography> */}
         </main>
       </div>
     );
