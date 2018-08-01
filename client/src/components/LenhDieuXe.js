@@ -1,8 +1,28 @@
 import React, { Component } from "react";
+import { graphql, compose } from 'react-apollo';
+import { withStyles } from '@material-ui/core/styles';
 import { withRouter } from 'react-router';
 import TextInput from './TextInput';
+import Button from '@material-ui/core/Button';
+import Icon from '@material-ui/core/Icon';
+import SaveIcon from '@material-ui/icons/Save';
 import { Grid } from "@material-ui/core";
 import DemoBase from "./DemoBase";
+
+const styles = theme => ({
+  button: {
+    margin: theme.spacing.unit,
+  },
+  leftIcon: {
+    marginRight: theme.spacing.unit,
+  },
+  rightIcon: {
+    marginLeft: theme.spacing.unit,
+  },
+  iconSmall: {
+    fontSize: 20,
+  },
+});
 
 class LenhDieuXe extends Component {
   render() {
@@ -54,10 +74,12 @@ class LenhDieuXe extends Component {
           </Grid>
         </Grid>
         <DemoBase />
+        <Button variant="contained" color="primary">
+          <SaveIcon />Save
+        </Button>
       </div>
     )
   }
 }
 
-export default withRouter(LenhDieuXe);
-
+export default withRouter(LenhDieuXe)
